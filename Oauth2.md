@@ -81,6 +81,21 @@ Mostly used for authorization between microservices.
 The Client Credentials grant type is used by clients to obtain an access token outside of the context of a user.
 This is typically used by clients to access resources about themselves rather than to access a user's resources.
 
+With machine-to-machine (M2M) applications, such as CLIs, daemons, or services running on your back-end, the system authenticates and authorizes the app rather than a user. For this scenario, typical authentication schemes like username + password or social logins don't make sense. 
+Instead, M2M apps use the Client Credentials Flow (defined in OAuth 2.0 RFC 6749, section 4.4), in which they pass along their Client ID and Client Secret to authenticate themselves and get a token.
+
+1. Your app authenticates with the Auth0 Authorization Server using its Client ID and Client Secret (/oauth/token endpoint).
+2. Your Auth0 Authorization Server validates the Client ID and Client Secret.
+3. Your Auth0 Authorization Server responds with an Access Token.
+4. Your application can use the Access Token to call an API on behalf of itself.
+5. The API responds with requested data.
+
+* useful for authorization between microservices
+* Used when the client is super trustworthy.
+* e.g If we ousrsefl creating the client (one microservice) then we know we have created this app and is trustable.
+
+![](auth-sequence-client-credentials.png)
+
 
 #### Sources:-
 * https://tools.ietf.org/html/rfc6749#section-4.1
