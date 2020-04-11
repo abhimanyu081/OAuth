@@ -83,10 +83,10 @@ This is typically used by clients to access resources about themselves rather th
 
 
 #### Sources:-
-https://tools.ietf.org/html/rfc6749#section-4.1
-https://tools.ietf.org/html/rfc6749#section-1
-https://auth0.com/docs/protocols/oauth2
-https://auth0.com/docs/flows/concepts/auth-code
-https://www.oauth.com/oauth2-servers/single-page-apps/#implicit
-https://oauth.net/2/grant-types/implicit/
-https://oauth.net/2/grant-types/client-credentials/
+* https://tools.ietf.org/html/rfc6749#section-4.1
+* https://tools.ietf.org/html/rfc6749#section-1
+* https://auth0.com/docs/protocols/oauth2
+* https://auth0.com/docs/flows/concepts/auth-code
+* https://www.oauth.com/oauth2-servers/single-page-apps/#implicit
+* https://oauth.net/2/grant-types/implicit/
+* https://oauth.net/2/grant-types/client-credentials/
